@@ -1,0 +1,5 @@
+ls_calculator:
+    resource: "@LSCalculatorBundle/Controller/"
+    type:     annotation
+    prefix:   /api
+
