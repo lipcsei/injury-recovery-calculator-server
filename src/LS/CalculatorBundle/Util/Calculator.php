@@ -43,7 +43,7 @@ class Calculator
     {
         $hour = 60 * 60;
         for ($i = 0; $i < $this->hours; $i++) {
-            if ($this->isWorks()) {
+            if ($this->isWorks() ) {
                 $this->date += $hour;
             } else {
                 while (!($this->isWorks())) {
@@ -64,7 +64,7 @@ class Calculator
             return false;
         }
         $hour = date('H', $this->date);
-        if ($hour < 10 || $hour >= 16) {
+        if ($hour <= 10 || $hour >= 16) {
             return false;
         }
         return true;
